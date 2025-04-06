@@ -467,12 +467,12 @@ font-size: 20px;
     width: 100%;
   }
   header ul {
-position: absolute;
+position: absolute ;
 left: 0;
 right: 0;
 background: #2d2f31;
 height: 0px;
-top: 57px;
+top: 100px;
 transition: all 250ms ease-in-out;
 flex-direction: column;
   }
@@ -562,8 +562,4 @@ flex-direction: column;
   }
 }
 
-@media screen and (min-width:992px){
-  .icon {
-    display: none;
-  }
 }
