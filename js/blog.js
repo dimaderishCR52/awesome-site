@@ -7,16 +7,16 @@ $(document).ready(() => {
     filter(search, data);
   });
 
-initCardsHandler();
+    $('.blog-tags a').on('click', (e) => {
+      e.preventDefault();
+      const search = $(e.currentTarget).text().toLowerCase();
+      filter(search, data);
+    });
+  
+
 });
 
-initCardsHandler () {
-  $('.blog-tags a').off().on('click', (e) => {
-    e.preventDefault();
-    const search = $(e.currentTarget).text().toLowerCase();
-    filter(search, data);
-  });
-}
+
 function drawCards(data) {
   $('.blog-container').html('');
   data.forEach((item, i)=>{
